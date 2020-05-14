@@ -1,0 +1,64 @@
+<h2>Components in Angular - Employee</h2>
+<hr />
+
+<table>
+    <tr>
+        <th>EmployeeId</th>
+        <th>EmployeeName</th>
+        <th>EmployeeDesignation</th>
+        <th>DateOfJoining</th>
+        <th>EmployeeAddress</th>
+        <th>EmployeePhone</th>
+        <th>EmployeeAge</th>
+        <th>Salary</th>
+        <th>City</th>
+        <th>CompanyName</th>
+    </tr>
+
+    <tr>
+      <td>{{this.EmployeeId}} </td>
+      <td>{{this.EmployeeName}}</td>
+      <td>{{this.EmployeeDesignation}}</td>
+      <td>{{this.DateOfJoining}}</td>
+      <td>{{this.EmployeeAddress}}</td>
+      <td>{{this.EmployeePhone}}</td>
+      <td>{{this.EmployeeAge}}</td>
+      <td>{{this.Salary | currency: 'USD': true}}</td>
+      <td>{{this.City}}</td>
+      <td>{{this.CompanyName}}</td>
+    </tr>
+    </table><br><br>
+
+    <h2>Components in Angular - EmployeeList</h2>
+    <hr>
+    <table>
+      <tr>
+        <th>EmployeeId</th>
+        <th>EmployeeName</th>
+        <th>EmployeeDesignation</th>
+        <th>DateOfJoining</th>
+        <th>EmployeeAddress</th>
+        <th>EmployeePhone</th>
+        <th>EmployeeAge</th>
+        <th>Salary</th>
+        <th>City</th>
+        <th>CompanyName</th>
+      </tr>
+
+
+      <tr *ngFor = 'let employee of employeeList'>
+        <td>{{employee.EmployeeId}} </td>
+        <td>{{employee.EmployeeName}}</td>
+        <td>{{employee.EmployeeDesignation}}</td>
+        <td>{{employee.DateOfJoining}}</td>
+        <td>{{employee.EmployeeAddress}}</td>
+        <td>{{employee.EmployeePhone}}</td>
+        <td>{{employee.EmployeeAge}}</td>
+        <td>{{employee.Salary | currency: 'USD': true}}</td>
+        <td>{{employee.City}}</td>
+        <td>{{employee.CompanyName}}</td>
+      </tr>
+    </table>
+
+
+<!--<td>{{item.salary | currency:'USD':true:'4.2-2'}}</td> -->

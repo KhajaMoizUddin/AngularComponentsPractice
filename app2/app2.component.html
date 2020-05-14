@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>EmployeeId</th>
+    <th>EmployeeName</th>
+    <th>EmployeeDesignation</th>
+    <th>DateOfJoining</th>
+    <th>EmployeeAddress</th>
+    <th>EmployeePhone</th>
+    <th>EmployeeAge</th>
+    <th>Salary</th>
+    <th>City</th>
+    <th>CompanyName</th>
+  </tr>
+
+  <tr *ngFor='let emp of employeeList'>
+<td>{{emp.EmployeeId}}</td>
+<td>{{emp.EmployeeName}}</td>
+<td>{{emp.EmployeeDesignation}}</td>
+<td>{{emp.DateOfJoining}}</td>
+<td>{{emp.EmployeeAddress}}</td>
+<td>{{emp.EmployeePhone}}</td>
+<td>{{emp.EmployeeAge}}</td>
+<td>{{emp.Salary}}</td>
+<td>{{emp.City}}</td>
+<td>{{emp.CompanyName}}</td>
+  </tr>
+</table>
+
